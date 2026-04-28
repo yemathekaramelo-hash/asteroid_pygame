@@ -14,9 +14,11 @@ class CircleShape(pygame.sprite.Sprite):
         self.velocity = pygame.Vector2(0, 0)
         self.radius = radius 
 
+    # to be overriden
     def draw(self, screen):
-        pygame.draw.polygon(screen, "white", self.triangle(), LINE_WIDTH)
+        pass
 
+    # to be overidden
     def update(self, dt):
         pass
 
